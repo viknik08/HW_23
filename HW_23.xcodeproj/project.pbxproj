@@ -11,6 +11,8 @@
 		BEEA1CB52933B10C00454330 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA1CB42933B10C00454330 /* ContentView.swift */; };
 		BEEA1CB72933B11200454330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEEA1CB62933B11200454330 /* Assets.xcassets */; };
 		BEEA1CBA2933B11200454330 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEEA1CB92933B11200454330 /* Preview Assets.xcassets */; };
+		BEEA1CC12933B25F00454330 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA1CC02933B25F00454330 /* TabBarView.swift */; };
+		BEEA1CC32933B4DB00454330 /* MediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA1CC22933B4DB00454330 /* MediaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		BEEA1CB42933B10C00454330 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BEEA1CB62933B11200454330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEEA1CB92933B11200454330 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BEEA1CC02933B25F00454330 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		BEEA1CC22933B4DB00454330 /* MediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				BEEA1CB22933B10C00454330 /* HW_23App.swift */,
 				BEEA1CB42933B10C00454330 /* ContentView.swift */,
+				BEEA1CC02933B25F00454330 /* TabBarView.swift */,
+				BEEA1CC22933B4DB00454330 /* MediaView.swift */,
 				BEEA1CB62933B11200454330 /* Assets.xcassets */,
 				BEEA1CB82933B11200454330 /* Preview Content */,
 			);
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEEA1CB52933B10C00454330 /* ContentView.swift in Sources */,
+				BEEA1CC32933B4DB00454330 /* MediaView.swift in Sources */,
+				BEEA1CC12933B25F00454330 /* TabBarView.swift in Sources */,
 				BEEA1CB32933B10C00454330 /* HW_23App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
