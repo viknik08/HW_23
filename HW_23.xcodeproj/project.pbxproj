@@ -13,6 +13,10 @@
 		BEEA1CBA2933B11200454330 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEEA1CB92933B11200454330 /* Preview Assets.xcassets */; };
 		BEEA1CC12933B25F00454330 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA1CC02933B25F00454330 /* TabBarView.swift */; };
 		BEEA1CC32933B4DB00454330 /* MediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA1CC22933B4DB00454330 /* MediaView.swift */; };
+		BEEA1CC72934B99F00454330 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA1CC62934B99F00454330 /* TableView.swift */; };
+		BEEA1CD2293896B500454330 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA1CD1293896B500454330 /* Model.swift */; };
+		BEEA1CD5293897FF00454330 /* MiniPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA1CD4293897FF00454330 /* MiniPlayer.swift */; };
+		BEEA1CD72938A23400454330 /* PreviewSreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA1CD62938A23400454330 /* PreviewSreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		BEEA1CB92933B11200454330 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BEEA1CC02933B25F00454330 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		BEEA1CC22933B4DB00454330 /* MediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaView.swift; sourceTree = "<group>"; };
+		BEEA1CC62934B99F00454330 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		BEEA1CD1293896B500454330 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		BEEA1CD4293897FF00454330 /* MiniPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayer.swift; sourceTree = "<group>"; };
+		BEEA1CD62938A23400454330 /* PreviewSreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +63,8 @@
 		BEEA1CB12933B10C00454330 /* HW_23 */ = {
 			isa = PBXGroup;
 			children = (
-				BEEA1CB22933B10C00454330 /* HW_23App.swift */,
-				BEEA1CB42933B10C00454330 /* ContentView.swift */,
-				BEEA1CC02933B25F00454330 /* TabBarView.swift */,
-				BEEA1CC22933B4DB00454330 /* MediaView.swift */,
-				BEEA1CB62933B11200454330 /* Assets.xcassets */,
-				BEEA1CB82933B11200454330 /* Preview Content */,
+				BEEA1CC9293894B400454330 /* Resources */,
+				BEEA1CC8293894A900454330 /* Sources */,
 			);
 			path = HW_23;
 			sourceTree = "<group>";
@@ -71,6 +75,78 @@
 				BEEA1CB92933B11200454330 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BEEA1CC8293894A900454330 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BEEA1CCB2938951700454330 /* App */,
+				BEEA1CCD2938954500454330 /* Models */,
+				BEEA1CCA293894D900454330 /* MainView */,
+				BEEA1CCC2938953400454330 /* TabBar */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BEEA1CC9293894B400454330 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BEEA1CB62933B11200454330 /* Assets.xcassets */,
+				BEEA1CB82933B11200454330 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BEEA1CCA293894D900454330 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				BEEA1CB42933B10C00454330 /* ContentView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		BEEA1CCB2938951700454330 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BEEA1CB22933B10C00454330 /* HW_23App.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BEEA1CCC2938953400454330 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				BEEA1CCE2938956500454330 /* TabView */,
+				BEEA1CCF2938958300454330 /* MediaView */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		BEEA1CCD2938954500454330 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BEEA1CD1293896B500454330 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BEEA1CCE2938956500454330 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				BEEA1CC02933B25F00454330 /* TabBarView.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		BEEA1CCF2938958300454330 /* MediaView */ = {
+			isa = PBXGroup;
+			children = (
+				BEEA1CC22933B4DB00454330 /* MediaView.swift */,
+				BEEA1CC62934B99F00454330 /* TableView.swift */,
+				BEEA1CD4293897FF00454330 /* MiniPlayer.swift */,
+				BEEA1CD62938A23400454330 /* PreviewSreen.swift */,
+			);
+			path = MediaView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +220,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEEA1CB52933B10C00454330 /* ContentView.swift in Sources */,
+				BEEA1CC72934B99F00454330 /* TableView.swift in Sources */,
 				BEEA1CC32933B4DB00454330 /* MediaView.swift in Sources */,
+				BEEA1CD2293896B500454330 /* Model.swift in Sources */,
+				BEEA1CD72938A23400454330 /* PreviewSreen.swift in Sources */,
+				BEEA1CD5293897FF00454330 /* MiniPlayer.swift in Sources */,
 				BEEA1CC12933B25F00454330 /* TabBarView.swift in Sources */,
 				BEEA1CB32933B10C00454330 /* HW_23App.swift in Sources */,
 			);
@@ -276,7 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HW_23/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"HW_23/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 65ZD43WNWU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -305,7 +385,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HW_23/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"HW_23/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 65ZD43WNWU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
