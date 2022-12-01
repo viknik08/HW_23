@@ -22,14 +22,14 @@ struct TableView: View {
                             .resizable()
                             .frame(width: 26, height: 26)
                             .foregroundColor(.red)
-                            .font(.system(size: 20, weight: .regular, design: .default))
-                            .padding(.leading, 15)
+                            .font(.subheadline)
+                            .padding(.leading, 10)
                         Text("\(self.mediaList[index].name)")
-                            .font(.title2)
-                            .padding(.leading, 15)
+                            .font(.subheadline)
+                            .padding(.leading, 10)
                     }
                     .toggleStyle(CheckboxStyle())
-                    .frame(height: 50)
+                    .frame(height: 25)
                 }
                 .onMove(perform: moveRow)
             }
@@ -49,7 +49,7 @@ struct CheckboxStyle: ToggleStyle {
                 .frame(width: 24, height: 24)
                 .foregroundColor(.red)
                 .font(.system(size: 20, weight: .regular, design: .default))
-                .padding(.leading, -15)
+                .padding(.leading, -30)
                 configuration.label
         }
         .onTapGesture { configuration.isOn.toggle() }

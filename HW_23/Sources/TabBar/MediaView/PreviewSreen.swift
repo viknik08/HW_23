@@ -27,7 +27,7 @@ struct PreviewSreen: View {
                     .foregroundColor(.secondary)
 
             }
-            .padding(.top, height)
+            .padding(.init(top: height, leading: 20, bottom: 0, trailing: 20))
         }
     }
 }

@@ -39,6 +39,7 @@ struct TabBarView: View {
             .accentColor(.red)
             
             MiniPlayer()
+                .padding(.bottom, 5)
         }
     }
 }
