@@ -9,11 +9,11 @@ import SwiftUI
 
 struct PreviewSreen: View {
     
-//    MARK: - Elements
+// MARK: - Elements
     
     var height = UIScreen.main.bounds.height / 3
 
-//    MARK: - Body
+// MARK: - Body
 
     var body: some View {
         ScrollView {

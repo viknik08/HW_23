@@ -9,23 +9,23 @@ import SwiftUI
 
 struct TabBarView: View {
     
-    // MARK: - Init
+// MARK: - Init
     
     init() {
         UITabBar.appearance().backgroundColor = .systemGray6
     }
     
-    // MARK: - Body
+// MARK: - Body
 
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
             TabView {
                 MediaView()
                     .tabItem {
-                        Image(systemName: "square.stack.fill")
+                        Image(systemName: "rectangle.stack.badge.play")
                         Text("Медиатека")
                     }
-                Text("Радио")
+                RadioView()
                     .tabItem {
                         Image(systemName: "dot.radiowaves.left.and.right")
                         Text("Радио")

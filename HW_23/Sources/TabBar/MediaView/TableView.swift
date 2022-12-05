@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct TableView: View {
-    // MARK: - Elements
-
-    @State private var mediaList = MediaListModel.getMediaList()
     
-    // MARK: - Body
+// MARK: - Elements
+
+    @State private var mediaList = MediaListModel.mediaList
+    
+// MARK: - Body
 
     var body: some View {
             List {

@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct MediaView: View {
-    // MARK: - Elements
+// MARK: - Elements
     
     @State var isEditing = false
     @State private var editMode = EditMode.inactive
     
-//    MARK: - Body
+// MARK: - Body
     
     var body: some View {
         NavigationView {
@@ -24,7 +24,7 @@ struct MediaView: View {
         }
     }
     
-    // MARK: - Private func
+// MARK: - Private func
     
     private var navigationBarItemTrailing: some View {
         return AnyView(Button(action: actionButton) {
