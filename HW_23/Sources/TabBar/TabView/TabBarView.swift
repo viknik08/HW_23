@@ -9,6 +9,12 @@ import SwiftUI
 
 struct TabBarView: View {
     
+    @State var expand = false
+    @Namespace var animation
+    
+    private let width = UIScreen.main.bounds.width
+
+    
 // MARK: - Init
     
     init() {
@@ -38,8 +44,7 @@ struct TabBarView: View {
             }
             .accentColor(.red)
             
-            MiniPlayer()
-                .padding(.bottom, 5)
+            MiniPlayer(animation: animation, expand: $expand)
         }
     }
 }

@@ -32,6 +32,10 @@ struct MiniPlayerModel {
     var name: String
     var nameSing: String
     var duration: Int
+    
+    static let miniPlayer: [MiniPlayerModel] = [
+        MiniPlayerModel(icon: "CA", name: "Marvel", nameSing: "We`re love CA", duration: 234)
+    ]
 }
 
 struct RadioListModel: Hashable {
@@ -47,7 +51,6 @@ struct RadioListModel: Hashable {
                   RadioListModel(icon: "pop", name: "Поп-музыка", nameStation: "Станция Apple Music", additionalInfo: "НОВЫЙ ВЫПУСК"),
                   RadioListModel(icon: "rock", name: "Классика рока", nameStation: "Станция Apple Music", additionalInfo: "ИЗБРАННАЯ РАДИОСТАНЦИЯ"),
                   RadioListModel(icon: "smus-music", name: "Смус-джаз", nameStation: "Станция Apple Music", additionalInfo: "ЭКСКЛЮЗИВ"),
-                  RadioListModel(icon: "chillout", name: "Чилаут", nameStation: "Станция Apple Music", additionalInfo: "ИЗБРАННАЯ РАДИОСТАНЦИЯ")
                 ],
                 [
                     RadioListModel(icon: "alternativa-station", name: "Альтернатива", additionalInfo: "Станция Apple Music"),

@@ -10,6 +10,8 @@
 		BE7D8FDA293E51BC00919828 /* HorisontalSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D8FD9293E51BC00919828 /* HorisontalSection.swift */; };
 		BE7D8FDC293E51CE00919828 /* VerticalSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D8FDB293E51CE00919828 /* VerticalSection.swift */; };
 		BE7D8FDE293E51DE00919828 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D8FDD293E51DE00919828 /* RadioView.swift */; };
+		BE7D8FF12949CE8F00919828 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D8FF02949CE8F00919828 /* LaunchScreen.swift */; };
+		BE7D8FF32949D1CE00919828 /* LaunchScreenPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D8FF22949D1CD00919828 /* LaunchScreenPhase.swift */; };
 		BEEA1CB32933B10C00454330 /* HW_23App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA1CB22933B10C00454330 /* HW_23App.swift */; };
 		BEEA1CB52933B10C00454330 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA1CB42933B10C00454330 /* ContentView.swift */; };
 		BEEA1CB72933B11200454330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEEA1CB62933B11200454330 /* Assets.xcassets */; };
@@ -26,6 +28,9 @@
 		BE7D8FD9293E51BC00919828 /* HorisontalSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorisontalSection.swift; sourceTree = "<group>"; };
 		BE7D8FDB293E51CE00919828 /* VerticalSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalSection.swift; sourceTree = "<group>"; };
 		BE7D8FDD293E51DE00919828 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
+		BE7D8FEF2949CE1300919828 /* HW-23-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "HW-23-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BE7D8FF02949CE8F00919828 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		BE7D8FF22949D1CD00919828 /* LaunchScreenPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenPhase.swift; sourceTree = "<group>"; };
 		BEEA1CAF2933B10C00454330 /* HW_23.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_23.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEEA1CB22933B10C00454330 /* HW_23App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW_23App.swift; sourceTree = "<group>"; };
 		BEEA1CB42933B10C00454330 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +84,7 @@
 		BEEA1CB12933B10C00454330 /* HW_23 */ = {
 			isa = PBXGroup;
 			children = (
+				BE7D8FEF2949CE1300919828 /* HW-23-Info.plist */,
 				BEEA1CC9293894B400454330 /* Resources */,
 				BEEA1CC8293894A900454330 /* Sources */,
 			);
@@ -117,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				BEEA1CB42933B10C00454330 /* ContentView.swift */,
+				BE7D8FF02949CE8F00919828 /* LaunchScreen.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -143,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				BEEA1CD1293896B500454330 /* Model.swift */,
+				BE7D8FF22949D1CD00919828 /* LaunchScreenPhase.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -244,6 +252,8 @@
 				BEEA1CD72938A23400454330 /* PreviewSreen.swift in Sources */,
 				BE7D8FDC293E51CE00919828 /* VerticalSection.swift in Sources */,
 				BEEA1CD5293897FF00454330 /* MiniPlayer.swift in Sources */,
+				BE7D8FF12949CE8F00919828 /* LaunchScreen.swift in Sources */,
+				BE7D8FF32949D1CE00919828 /* LaunchScreenPhase.swift in Sources */,
 				BEEA1CC12933B25F00454330 /* TabBarView.swift in Sources */,
 				BE7D8FDA293E51BC00919828 /* HorisontalSection.swift in Sources */,
 				BEEA1CB32933B10C00454330 /* HW_23App.swift in Sources */,
@@ -380,9 +390,9 @@
 				DEVELOPMENT_TEAM = 65ZD43WNWU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "HW-23-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -409,9 +419,9 @@
 				DEVELOPMENT_TEAM = 65ZD43WNWU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "HW-23-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

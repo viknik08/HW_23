@@ -12,28 +12,27 @@ struct TableView: View {
 // MARK: - Elements
 
     @State private var mediaList = MediaListModel.mediaList
+    @State var isEditMode = EditMode.active
+    @State var selectionItems: [String] = []
+    @State var someItemSelection = Set<UUID>()
     
 // MARK: - Body
 
     var body: some View {
-            List {
-                ForEach(0..<mediaList.count) { index in
-                    Toggle(isOn: self.$mediaList[index].isOn) {
-                        Image(systemName: self.mediaList[index].icon)
-                            .resizable()
-                            .frame(width: 26, height: 26)
-                            .foregroundColor(.red)
-                            .font(.subheadline)
-                            .padding(.leading, 10)
-                        Text("\(self.mediaList[index].name)")
-                            .font(.subheadline)
-                            .padding(.leading, 10)
+            List(selection: $someItemSelection) {
+                
+                ForEach(mediaList, id: \.id) { index in
+                    ListItemView(title: index.name, icon: index.icon, isSelected: selectionItems.contains(index.name)) {
+                        if self.selectionItems.contains(index.name) {
+                            self.selectionItems.removeAll(where: { index.name == $0 })
+                        } else {
+                            self.selectionItems.append(index.name)
+                        }
                     }
-                    .toggleStyle(CheckboxStyle())
-                    .frame(height: 25)
                 }
                 .onMove(perform: moveRow)
             }
+            .environment(\.editMode, $isEditMode)
             .listStyle(.plain)
     }
     
@@ -42,23 +41,30 @@ struct TableView: View {
     }
 }
 
-struct CheckboxStyle: ToggleStyle {
-    func makeBody(configuration: Self.Configuration) -> some View {
-        return HStack {
-            Image(systemName: configuration.isOn ? "checkmark.circle.fill" : "circle")
-                .resizable()
-                .frame(width: 24, height: 24)
-                .foregroundColor(.red)
-                .font(.system(size: 20, weight: .regular, design: .default))
-                .padding(.leading, -30)
-                configuration.label
-        }
-        .onTapGesture { configuration.isOn.toggle() }
-    }
-}
-
 struct TableView_Previews: PreviewProvider {
     static var previews: some View {
         TableView()
+    }
+}
+
+struct ListItemView: View {
+    var title: String
+    var icon: String
+    var isSelected: Bool
+    var itemAction: () -> ()
+
+    var body: some View {
+        Button(action: self.itemAction) {
+            HStack {
+                Image(systemName: self.icon)
+                    .resizable()
+                    .frame(width: 20, height: 20)
+                    .foregroundColor(.red)
+                
+                Text(self.title)
+                    .font(.system(size: 18,weight: .regular, design: .default))
+            }
+            .frame(height: 40)
+        }
     }
 }
