@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "CA.png",
+      "filename" : "Снимок экрана 2022-04-18 в 21.17.25 2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "CA-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "CA-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -36,7 +36,7 @@ struct TabBarView: View {
                         Image(systemName: "dot.radiowaves.left.and.right")
                         Text("Радио")
                     }
-                Text("Поиск")
+                MainSearchView()
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                         Text("Поиск")

@@ -12,6 +12,8 @@
 		BE7D8FDE293E51DE00919828 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D8FDD293E51DE00919828 /* RadioView.swift */; };
 		BE7D8FF12949CE8F00919828 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D8FF02949CE8F00919828 /* LaunchScreen.swift */; };
 		BE7D8FF32949D1CE00919828 /* LaunchScreenPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D8FF22949D1CD00919828 /* LaunchScreenPhase.swift */; };
+		BE7D8FF6294B181400919828 /* MainSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D8FF5294B181300919828 /* MainSearchView.swift */; };
+		BE7D8FF9294B192000919828 /* CategoryCellSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D8FF8294B192000919828 /* CategoryCellSearch.swift */; };
 		BEEA1CB32933B10C00454330 /* HW_23App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA1CB22933B10C00454330 /* HW_23App.swift */; };
 		BEEA1CB52933B10C00454330 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA1CB42933B10C00454330 /* ContentView.swift */; };
 		BEEA1CB72933B11200454330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEEA1CB62933B11200454330 /* Assets.xcassets */; };
@@ -31,6 +33,8 @@
 		BE7D8FEF2949CE1300919828 /* HW-23-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "HW-23-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BE7D8FF02949CE8F00919828 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		BE7D8FF22949D1CD00919828 /* LaunchScreenPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenPhase.swift; sourceTree = "<group>"; };
+		BE7D8FF5294B181300919828 /* MainSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchView.swift; sourceTree = "<group>"; };
+		BE7D8FF8294B192000919828 /* CategoryCellSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellSearch.swift; sourceTree = "<group>"; };
 		BEEA1CAF2933B10C00454330 /* HW_23.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_23.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEEA1CB22933B10C00454330 /* HW_23App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW_23App.swift; sourceTree = "<group>"; };
 		BEEA1CB42933B10C00454330 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +67,15 @@
 				BE7D8FDB293E51CE00919828 /* VerticalSection.swift */,
 			);
 			path = Radio;
+			sourceTree = "<group>";
+		};
+		BE7D8FF4294B151700919828 /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				BE7D8FF5294B181300919828 /* MainSearchView.swift */,
+				BE7D8FF8294B192000919828 /* CategoryCellSearch.swift */,
+			);
+			path = SearchView;
 			sourceTree = "<group>";
 		};
 		BEEA1CA62933B10C00454330 = {
@@ -139,6 +152,7 @@
 		BEEA1CCC2938953400454330 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				BE7D8FF4294B151700919828 /* SearchView */,
 				BE7D8FD8293E517900919828 /* Radio */,
 				BEEA1CCE2938956500454330 /* TabView */,
 				BEEA1CCF2938958300454330 /* MediaView */,
@@ -251,10 +265,12 @@
 				BEEA1CD2293896B500454330 /* Model.swift in Sources */,
 				BEEA1CD72938A23400454330 /* PreviewSreen.swift in Sources */,
 				BE7D8FDC293E51CE00919828 /* VerticalSection.swift in Sources */,
+				BE7D8FF6294B181400919828 /* MainSearchView.swift in Sources */,
 				BEEA1CD5293897FF00454330 /* MiniPlayer.swift in Sources */,
 				BE7D8FF12949CE8F00919828 /* LaunchScreen.swift in Sources */,
 				BE7D8FF32949D1CE00919828 /* LaunchScreenPhase.swift in Sources */,
 				BEEA1CC12933B25F00454330 /* TabBarView.swift in Sources */,
+				BE7D8FF9294B192000919828 /* CategoryCellSearch.swift in Sources */,
 				BE7D8FDA293E51BC00919828 /* HorisontalSection.swift in Sources */,
 				BEEA1CB32933B10C00454330 /* HW_23App.swift in Sources */,
 			);

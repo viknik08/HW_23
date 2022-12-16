@@ -34,7 +34,7 @@ struct MiniPlayerModel {
     var duration: Int
     
     static let miniPlayer: [MiniPlayerModel] = [
-        MiniPlayerModel(icon: "CA", name: "Marvel", nameSing: "We`re love CA", duration: 234)
+        MiniPlayerModel(icon: "logoPlist", name: "Every", nameSing: "We love", duration: 234)
     ]
 }
 
@@ -64,3 +64,89 @@ struct RadioListModel: Hashable {
                 ]]
 }
 
+struct SearchModel: Hashable {
+    var icon: String
+    var name: String
+    var searchCell: SearchCollection?
+    
+    static let search: [SearchModel] = [
+        SearchModel(icon: "pop-russia-search",
+                    name: "Поп на русском",
+                    searchCell: SearchCollection(name: "Поп на русском",
+                                                 searchCell: [[
+                                                    SearchCellModel(icon: "", name: "(Deluxe)", nameAlbum: "Ed Sheeran", additionalInfo: "АУДИО"),
+                                                    SearchCellModel(icon: "", name: "1 (2015 Version)", nameAlbum: "The Beatles", additionalInfo: "НОВИНКИ"),
+                                                    SearchCellModel(icon: "", name: "Multitude", nameAlbum: "Stromae", additionalInfo: "НОВИНКИ")
+                                                 ],
+                                                              [
+                                                                SearchCellModel(icon: "", name: "Свой плейлист", additionalInfo: "Apple Music"),
+                                                                SearchCellModel(icon: "", name: "Хиты", additionalInfo: "Apple Music"),
+                                                                SearchCellModel(icon: "", name: "Поп", additionalInfo: "Apple Music")
+                                                              ],
+                                                              [
+                                                                SearchCellModel(icon: "", name: "Феникс", additionalInfo: "ANNA ASTI"),
+                                                                SearchCellModel(icon: "", name: "Sweetest Pie", additionalInfo: "Megan Thee Stallion & Dua Lipa"),
+                                                                SearchCellModel(icon: "", name: "По полюшку", additionalInfo: "Akmal'"),
+                                                                SearchCellModel(icon: "", name: "Танцевали до утра", additionalInfo: "Леша Свик"),
+                                                                SearchCellModel(icon: "", name: "Он и Она", additionalInfo: "Jah Khalib & Akha"),
+                                                                SearchCellModel(icon: "", name: "Time Today", additionalInfo: "Moneybag"),
+                                                                SearchCellModel(icon: "", name: "Айсберг", additionalInfo: "Zivert"),
+                                                                SearchCellModel(icon: "", name: "Азбука", additionalInfo: "Boulevard Depo & SPAK"),
+                                                                SearchCellModel(icon: "", name: "Паранойя", additionalInfo: "XARISTA"),
+                                                                SearchCellModel(icon: "", name: "Tell To My Heart", additionalInfo: "Meduza"),
+                                                                SearchCellModel(icon: "", name: "Oh Na Na", additionalInfo: "Camila Cabello, Myke Towers & Tainy")
+                                                              ]]
+                                                )
+                   ),
+            SearchModel(icon: "pop-search", name: "Поп", searchCell: nil),
+            SearchModel(icon: "hip-hop-russia-search", name: "Хип-хоп на русском", searchCell: nil),
+            SearchModel(icon: "calmness-search", name: "Спокойствие", searchCell: nil),
+            SearchModel(icon: "hits-search", name: "Хиты", searchCell: nil),
+            SearchModel(icon: "siri-search", name: "Привет, Siri, включи...", searchCell: nil),
+            SearchModel(icon: "hits-russia-search", name: "Хиты на русском", searchCell: nil),
+            SearchModel(icon: "rock-russia-search", name: "Рок на русском", searchCell: nil),
+            SearchModel(icon: "chats-search", name: "Чарты", searchCell: nil),
+            SearchModel(icon: "dj-search", name: "DJ-миксы", searchCell: nil),
+            SearchModel(icon: "sunrice-search", name: "Восход", searchCell: nil),
+            SearchModel(icon: "hip-hop-search", name: "Хип-хоп", searchCell: nil),
+            SearchModel(icon: "children-search", name: "Для детей", searchCell: nil),
+            SearchModel(icon: "family-search", name: "Для семьи", searchCell: nil)
+        ]
+}
+
+struct SearchCellModel: Hashable {
+    var icon: String
+    var name: String
+    var nameAlbum: String?
+    var additionalInfo: String
+    
+    static let searchCell: [[SearchCellModel]] = [[
+            SearchCellModel(icon: "", name: "(Deluxe)", nameAlbum: "Ed Sheeran", additionalInfo: "АУДИО"),
+            SearchCellModel(icon: "", name: "1 (2015 Version)", nameAlbum: "The Beatles", additionalInfo: "НОВИНКИ"),
+            SearchCellModel(icon: "", name: "Multitude", nameAlbum: "Stromae", additionalInfo: "НОВИНКИ")
+        ],
+        [
+            SearchCellModel(icon: "", name: "Создать плайлист", additionalInfo: "Apple Music"),
+            SearchCellModel(icon: "", name: "Хиты", additionalInfo: "Apple Music"),
+            SearchCellModel(icon: "", name: "Поп", additionalInfo: "Apple Music")
+        ],
+        [
+            SearchCellModel(icon: "", name: "Феникс", additionalInfo: "ANNA ASTI"),
+            SearchCellModel(icon: "", name: "Sweetest Pie", additionalInfo: "Megan Thee Stallion & Dua Lipa"),
+            SearchCellModel(icon: "", name: "По полюшку", additionalInfo: "Akmal'"),
+            SearchCellModel(icon: "", name: "Танцевали до утра", additionalInfo: "Леша Свик"),
+            SearchCellModel(icon: "", name: "Он и Она", additionalInfo: "Jah Khalib & Akha"),
+            SearchCellModel(icon: "", name: "Time Today", additionalInfo: "Moneybag"),
+            SearchCellModel(icon: "", name: "Айсберг", additionalInfo: "Zivert"),
+            SearchCellModel(icon: "", name: "Азбука", additionalInfo: "Boulevard Depo & SPAK"),
+            SearchCellModel(icon: "", name: "Паранойя", additionalInfo: "XARISTA"),
+            SearchCellModel(icon: "", name: "Tell To My Heart", additionalInfo: "Meduza"),
+            SearchCellModel(icon: "", name: "Oh Na Na", additionalInfo: "Camila Cabello, Myke Towers & Tainy")
+        ]
+        ]
+}
+
+struct SearchCollection: Hashable {
+    var name: String
+    var searchCell: [[SearchCellModel]]
+}

@@ -9,11 +9,15 @@ import SwiftUI
 
 struct LaunchScreen: View {
     
+// MARK: - Elements
+
     @EnvironmentObject var launchScreenManager: LaunchScreenManager
     @State private var firstPhase = false
     @State private var secondPhase = false
     private let timer = Timer.publish(every: 0.65, on: .main, in: .common).autoconnect()
     
+// MARK: - Body
+
     var body: some View {
         ZStack {
             background
@@ -56,9 +60,15 @@ private extension LaunchScreen {
     }
     
     var logo: some View {
-        Image("CA")
-            .scaleEffect(firstPhase ? 0.6 : 1)
-            .scaleEffect(secondPhase ? UIScreen.main.bounds.size.height / 4 : 1)
+        VStack {
+            Image("appleLogo")
+                .scaleEffect(firstPhase ? 0.6 : 1)
+                .scaleEffect(secondPhase ? UIScreen.main.bounds.size.height / 4 : 1)
 
+            Text("Apple Music")
+                .bold()
+                .font(.title)
+                .foregroundColor(Color("color-for-launch"))
+        }
     }
 }
