@@ -36,7 +36,8 @@ struct TabBarView: View {
                         Image(systemName: "dot.radiowaves.left.and.right")
                         Text("Радио")
                     }
-                MainSearchView()
+//                MainSearchView()
+                UIKitFromSwiftUI()
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                         Text("Поиск")

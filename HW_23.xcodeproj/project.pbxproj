@@ -14,6 +14,9 @@
 		BE7D8FF32949D1CE00919828 /* LaunchScreenPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D8FF22949D1CD00919828 /* LaunchScreenPhase.swift */; };
 		BE7D8FF6294B181400919828 /* MainSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D8FF5294B181300919828 /* MainSearchView.swift */; };
 		BE7D8FF9294B192000919828 /* CategoryCellSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D8FF8294B192000919828 /* CategoryCellSearch.swift */; };
+		BE7D8FFE2953600400919828 /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D8FFD2953600300919828 /* SearchViewCell.swift */; };
+		BE7D90002953612800919828 /* MainViewUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D8FFF2953612800919828 /* MainViewUIKit.swift */; };
+		BE7D90022953626300919828 /* UIKitFromSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D90012953626300919828 /* UIKitFromSwiftUI.swift */; };
 		BEEA1CB32933B10C00454330 /* HW_23App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA1CB22933B10C00454330 /* HW_23App.swift */; };
 		BEEA1CB52933B10C00454330 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA1CB42933B10C00454330 /* ContentView.swift */; };
 		BEEA1CB72933B11200454330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEEA1CB62933B11200454330 /* Assets.xcassets */; };
@@ -35,6 +38,9 @@
 		BE7D8FF22949D1CD00919828 /* LaunchScreenPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenPhase.swift; sourceTree = "<group>"; };
 		BE7D8FF5294B181300919828 /* MainSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchView.swift; sourceTree = "<group>"; };
 		BE7D8FF8294B192000919828 /* CategoryCellSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellSearch.swift; sourceTree = "<group>"; };
+		BE7D8FFD2953600300919828 /* SearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
+		BE7D8FFF2953612800919828 /* MainViewUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewUIKit.swift; sourceTree = "<group>"; };
+		BE7D90012953626300919828 /* UIKitFromSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitFromSwiftUI.swift; sourceTree = "<group>"; };
 		BEEA1CAF2933B10C00454330 /* HW_23.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_23.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEEA1CB22933B10C00454330 /* HW_23App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW_23App.swift; sourceTree = "<group>"; };
 		BEEA1CB42933B10C00454330 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,10 +78,37 @@
 		BE7D8FF4294B151700919828 /* SearchView */ = {
 			isa = PBXGroup;
 			children = (
+				BE7D8FFA29535C8D00919828 /* SearchUIKit */,
 				BE7D8FF5294B181300919828 /* MainSearchView.swift */,
 				BE7D8FF8294B192000919828 /* CategoryCellSearch.swift */,
+				BE7D90012953626300919828 /* UIKitFromSwiftUI.swift */,
 			);
 			path = SearchView;
+			sourceTree = "<group>";
+		};
+		BE7D8FFA29535C8D00919828 /* SearchUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				BE7D8FFC29535F9100919828 /* SearchViewCell */,
+				BE7D8FFB29535F8600919828 /* MainView */,
+			);
+			path = SearchUIKit;
+			sourceTree = "<group>";
+		};
+		BE7D8FFB29535F8600919828 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				BE7D8FFF2953612800919828 /* MainViewUIKit.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		BE7D8FFC29535F9100919828 /* SearchViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BE7D8FFD2953600300919828 /* SearchViewCell.swift */,
+			);
+			path = SearchViewCell;
 			sourceTree = "<group>";
 		};
 		BEEA1CA62933B10C00454330 = {
@@ -258,14 +291,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE7D8FFE2953600400919828 /* SearchViewCell.swift in Sources */,
 				BE7D8FDE293E51DE00919828 /* RadioView.swift in Sources */,
 				BEEA1CB52933B10C00454330 /* ContentView.swift in Sources */,
 				BEEA1CC72934B99F00454330 /* TableView.swift in Sources */,
 				BEEA1CC32933B4DB00454330 /* MediaView.swift in Sources */,
 				BEEA1CD2293896B500454330 /* Model.swift in Sources */,
+				BE7D90002953612800919828 /* MainViewUIKit.swift in Sources */,
 				BEEA1CD72938A23400454330 /* PreviewSreen.swift in Sources */,
 				BE7D8FDC293E51CE00919828 /* VerticalSection.swift in Sources */,
 				BE7D8FF6294B181400919828 /* MainSearchView.swift in Sources */,
+				BE7D90022953626300919828 /* UIKitFromSwiftUI.swift in Sources */,
 				BEEA1CD5293897FF00454330 /* MiniPlayer.swift in Sources */,
 				BE7D8FF12949CE8F00919828 /* LaunchScreen.swift in Sources */,
 				BE7D8FF32949D1CE00919828 /* LaunchScreenPhase.swift in Sources */,
