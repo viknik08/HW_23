@@ -11,7 +11,7 @@ struct MiniPlayer: View {
     // MARK: - Elements
     
     let animation: Namespace.ID
-    private let height = UIScreen.main.bounds.height / 4
+    private let height = UIScreen.main.bounds.height / 3
     private let width = UIScreen.main.bounds.width
 
     @State private var model = MiniPlayerModel.miniPlayer
@@ -28,11 +28,12 @@ struct MiniPlayer: View {
                     self.player(data: model[i])
                 } else {
                     self.miniPlayer(data: model[i])
+                        
                 }
             }
         }
         .background(
-            Color(UIColor.systemGray4)
+            Color(UIColor.systemGray6)
                 .onTapGesture {
                     withAnimation(.spring()) {
                         expand.toggle()
@@ -135,16 +136,16 @@ struct MiniPlayer: View {
                     HStack {
                         
                         Text("\(stringDuration(duration: Int(volumeDuration)))")
-                            .font(.system(size: 10, weight: .regular, design: .default))
+                            .font(.system(size: 13, weight: .regular, design: .default))
                             .foregroundColor(.primary)
 
                         Spacer(minLength: 0)
                             
                         Text("-\(stringDuration(duration: Int(CGFloat(data.duration) - volumeDuration)))")
-                            .font(.system(size: 10, weight: .regular, design: .default))
+                            .font(.system(size: 13, weight: .regular, design: .default))
                             .foregroundColor(.primary)
                     }
-                    .padding(.top, -10)
+                    .padding(.top, -3)
                 }
                 .padding()
                 
@@ -210,7 +211,7 @@ struct MiniPlayer: View {
                             .foregroundColor(Color(UIColor.darkGray))
                     }
                 }
-                .padding(.bottom, 15)
+                .padding(.bottom, 30)
             }
             .frame(width: nil, height: nil)
             .opacity(1)

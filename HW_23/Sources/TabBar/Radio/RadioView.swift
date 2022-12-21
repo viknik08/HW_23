@@ -25,7 +25,7 @@ struct RadioView: View {
                         VStack {
                             Rectangle()
                                 .fill(Color(UIColor.gray.cgColor))
-                                .frame(width: 450, height: 2, alignment: .center)
+                                .frame(width: UIScreen.main.bounds.width, height: 2, alignment: .center)
                                 .padding(.top, 10)
                                 .opacity(0.2)
                             VerticalSection(model: item)

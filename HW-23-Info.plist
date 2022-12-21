@@ -6,8 +6,6 @@
 	<dict>
 		<key>UIColorName</key>
 		<string>launch-screen-bg</string>
-		<key>UIImageName</key>
-		<string>appleLogo</string>
 		<key>UIImageRespectsSafeAreaInsets</key>
 		<true/>
 	</dict>
